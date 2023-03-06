@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Courier', sans-serif;
+  background: linear-gradient(to left, #c18cf3 0%, #79efff 100%);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

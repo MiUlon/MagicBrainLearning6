@@ -1,0 +1,13 @@
+.navigationDesign {
+    border: 1px solid;
+    border-radius: 10px
+}
+
+.navigationFlex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigationMaxWidth {
+    max-width: 150px;
+}
