@@ -8,3 +8,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.background {
+  background: linear-gradient(to left, #c18cf3 0%, #79efff 100%);
+}
