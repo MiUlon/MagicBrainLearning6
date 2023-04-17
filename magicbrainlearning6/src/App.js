@@ -110,7 +110,7 @@ class App extends Component {
                 <FaceDetection box={this.state.box} imageUrl={this.state.imageUrl} />
               </div> 
             : ( this.state.route === 'signin' 
-                  ? <SignInForm onRouteChange={this.onRouteChange} />
+                  ? <SignInForm onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
                   : <RegisterForm onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
             )
         }
