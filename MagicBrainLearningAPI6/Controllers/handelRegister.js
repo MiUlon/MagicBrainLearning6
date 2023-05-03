@@ -1,5 +1,8 @@
 export const handelRegister = (req, res, bcrypt, postgres) => {
     const { name, email, password } = req.body;
+    if (!name || !email || !password) {
+        return res.status(400).json('Incorrect form submition')
+    }
     const hash = bcrypt.hashSync(password);
     postgres.transaction(trx => {
         trx.insert({
